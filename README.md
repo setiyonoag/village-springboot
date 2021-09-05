@@ -4,22 +4,20 @@ This is a REST-API project on village structures in the Central Java region. Usi
 
 there are 3 entities
 
-<b>hamlet(RW)</b>
+<b>Hamlet(RW)</b>
 - id
 - head of hamlet
-- total neighborhood
 - an area
 
-<b>neighbourhood(RT)</b>
+<b>Neighbourhood(RT)</b>
 - id
 - head of the neighborhood
-- total citizens
 - an area
 - Hamlet data
 
-<b>citizen data</b>
+<b>Citizen(data-warga)</b>
 - id
-- the name of the head of the family
+- head of the family
 - number of family members
 - KK number
 - neighborhood data
