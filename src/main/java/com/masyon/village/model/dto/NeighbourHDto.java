@@ -1,9 +1,6 @@
 package com.masyon.village.model.dto;
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.*;
 
 @Data
 public class NeighbourHDto {
