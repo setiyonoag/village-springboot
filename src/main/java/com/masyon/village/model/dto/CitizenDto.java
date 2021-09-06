@@ -10,5 +10,5 @@ public class CitizenDto {
     private String headOfFamily;
     private Integer familyMember;
     private String idHamlet;
-    private String idHeighbourhood;
+    private String idNeighbourhood;
 }

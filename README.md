@@ -22,3 +22,11 @@ there are 3 entities
 - KK number
 - neighborhood data
 - Hamlet data
+  
+<h6>Each entity has 6 mapping controllers</h6>
+- get all data
+- get data by id
+- get data filtered by other entity
+- data entry
+- update data
+- delete data
