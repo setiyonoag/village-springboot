@@ -25,6 +25,12 @@ public class CitizenEntity {
     @Column(name = "family_member")
     private Integer familyMember;
 
+    @Column(name = "id_hamlet")
+    private String idHamlet;
+
+    @Column(name = "id_neighbourhood")
+    private String idNeighbourHood;
+
     @ManyToOne
     @JoinColumn(
             name = "id_hamlet",

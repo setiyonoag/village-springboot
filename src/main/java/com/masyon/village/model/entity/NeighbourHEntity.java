@@ -25,6 +25,9 @@ public class NeighbourHEntity {
     @Column(name = "area_neighbourhood")
     private Integer areaNeighbourHood;
 
+    @Column(name = "id_hamlet")
+    private String idHamlet;
+
     @ManyToOne
     @JoinColumn(
             name = "id_hamlet",
