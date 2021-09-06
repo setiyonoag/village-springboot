@@ -71,6 +71,10 @@ public class NeighbourhoodController {
         NeighbourHEntity updateNeighbourhood = neighbourhoodService.updateNeighbourhood(NeighbourhoodId, neighbourHEntity);
         return convertToDto(updateNeighbourhood);
     }
-
+    //count neighbourhood by hamlet
+    @GetMapping("hml/{id}")
+    public Object countNeighbourhoodnByHamlet(@PathVariable(value = "id") String id) {
+        return neighbourhoodService.countNeighbourhoodByHamlet(id);
+    }
 
 }

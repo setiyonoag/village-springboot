@@ -51,8 +51,20 @@ public class CitizenServiceImpl implements CitizenService{
         citizen.setHeadOfFamily(citizenEntity.getHeadOfFamily());
         citizen.setFamilyMember(citizenEntity.getFamilyMember());
         citizen.setIdHamlet(citizenEntity.getIdHamlet());
-        citizen.setIdNeighbourHood(citizenEntity.getIdNeighbourHood());
+        citizen.setIdNeighbourhood(citizenEntity.getIdNeighbourhood());
         final CitizenEntity updatedCitizen = citizenRepo.save(citizen);
         return updatedCitizen;
+    }
+    //count citizen by id hamlet
+    @Override
+    public Object countCitizenByHamlet(String idHamlet) {
+        Object count = citizenRepo.countCitizenByHamlet(idHamlet);
+        return count;
+    }
+    //count citizen by id neighbourhood
+    @Override
+    public Object countCitizenByNeighbourhood(String id) {
+        Object count = citizenRepo.countCitizenByNeighbourhood(id);
+        return count;
     }
 }

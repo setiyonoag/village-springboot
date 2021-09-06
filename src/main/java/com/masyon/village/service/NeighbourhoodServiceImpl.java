@@ -54,4 +54,10 @@ public class NeighbourhoodServiceImpl implements NeighbourhoodService{
         final NeighbourHEntity updatedNeighbourH = neighbourhoodRepo.save(NeighbourH);
         return updatedNeighbourH;
     }
+    //count neighbourhood by id hamlet
+    @Override
+    public Object countNeighbourhoodByHamlet(String idHamlet) {
+        Object count = neighbourhoodRepo.countNeighbourhoodByHamlet(idHamlet);
+        return count;
+    }
 }

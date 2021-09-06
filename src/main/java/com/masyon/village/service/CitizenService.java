@@ -13,5 +13,6 @@ public interface CitizenService {
     CitizenEntity saveCitizen(CitizenEntity citizenEntity);
     CitizenEntity getCitizenById(String id) throws ResourceNotFoundException;
     CitizenEntity updateCitizen(String id, CitizenEntity citizenEntity) throws ResourceNotFoundException;
-
+    Object countCitizenByHamlet(String idHamlet);
+    Object countCitizenByNeighbourhood(String id);
 }

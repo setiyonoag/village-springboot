@@ -69,4 +69,14 @@ public class CitizenController {
         CitizenEntity citizenUpdated = citizenService.updateCitizen(CitizenId, citizenEntity);
         return convertToDto(citizenUpdated);
     }
+    //count citizen by hamlet
+    @GetMapping("hml/{id}")
+    public Object countCitizenByHamlet(@PathVariable(value = "id") String id) {
+        return citizenService.countCitizenByHamlet(id);
+    }
+    //count citizen by hamlet
+    @GetMapping("nbh/{id}")
+    public Object countCitizenByNeighbourhood(@PathVariable(value = "id") String id) {
+        return citizenService.countCitizenByNeighbourhood(id);
+    }
 }

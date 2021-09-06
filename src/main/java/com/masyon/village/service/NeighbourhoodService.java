@@ -13,5 +13,5 @@ public interface NeighbourhoodService {
     NeighbourHEntity saveNeighbourhood(NeighbourHEntity neighbourHEntity);
     NeighbourHEntity getNeighbourhoodById(String id) throws ResourceNotFoundException;
     NeighbourHEntity updateNeighbourhood(String id, NeighbourHEntity neighbourHEntity) throws ResourceNotFoundException;
-
+    Object countNeighbourhoodByHamlet(String idHamlet);
 }

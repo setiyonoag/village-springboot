@@ -27,9 +27,8 @@ public class CitizenEntity {
 
     @Column(name = "id_hamlet")
     private String idHamlet;
-
     @Column(name = "id_neighbourhood")
-    private String idNeighbourHood;
+    private String idNeighbourhood;
 
     @ManyToOne
     @JoinColumn(
@@ -39,6 +38,7 @@ public class CitizenEntity {
             updatable = false
     )
     private HamletEntity hamletEntity;
+
 
     @ManyToOne
     @JoinColumn(
