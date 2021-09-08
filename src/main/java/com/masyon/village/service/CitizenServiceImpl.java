@@ -57,8 +57,8 @@ public class CitizenServiceImpl implements CitizenService{
     }
     //count citizen by id hamlet
     @Override
-    public Object countCitizenByHamlet(String idHamlet) {
-        Object count = citizenRepo.countCitizenByHamlet(idHamlet);
+    public Object  countCitizenByHamlet(String idHamlet) {
+        Object  count = citizenRepo.countCitizenByHamlet(idHamlet);
         return count;
     }
     //count citizen by id neighbourhood

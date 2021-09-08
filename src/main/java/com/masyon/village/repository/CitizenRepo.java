@@ -4,6 +4,8 @@ import com.masyon.village.model.entity.CitizenEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.ArrayList;
+
 public interface CitizenRepo extends JpaRepository<CitizenEntity, String> {
 
     @Query ("SELECT COUNT(cc.headOfFamily) " +

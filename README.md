@@ -1,6 +1,6 @@
 <h3>Village-SpringBoot API</h3>
 
-This is a REST-API project on village structures in the Central Java region. Using the java programming language and springboot technology.
+This is a REST-API project on village structures in the Central Java region. Using the java programming language, springboot technology/framework, and PostgreSQL relational database.
 
 there are 3 entities
 
